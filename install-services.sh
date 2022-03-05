@@ -29,7 +29,8 @@ echo ""
 echo ""
 echo "Instalamos php"
 echo "-----"
-apt install php libapache2-mod-php php-mysql php-curl php-zip php-gd php-bcmath php-imagick php-gmp php-intl
+apt install -y php libapache2-mod-php php-mysql php-curl php-zip php-gd php-bcmath php-imagick php-gmp php-intl
+apt-get install -y libmagickcore-6.q16-6-extra
 echo "-----"
 echo ""
 echo "Reiniciamos apache"
@@ -45,5 +46,5 @@ apt install -y phpmyadmin
 echo "-----"
 echo ""
 echo "Instalamos certbot"
-apt-get install python3-certbot-apache
+apt-get -y install python3-certbot-apache
 certbot --authenticator webroot --installer apache
