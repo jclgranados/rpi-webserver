@@ -43,3 +43,7 @@ echo "Instalamos phpmyadmin"
 echo "-----"
 apt install -y phpmyadmin
 echo "-----"
+echo ""
+echo "Instalamos certbot"
+apt-get install python3-certbot-apache
+certbot --authenticator webroot --installer apache
