@@ -29,7 +29,7 @@ echo ""
 echo ""
 echo "Instalamos php"
 echo "-----"
-apt install php libapache2-mod-php php-mysql php-curl php-zip php-gd
+apt install php libapache2-mod-php php-mysql php-curl php-zip php-gd php-bcmath php-imagick php-gmp php-intl
 echo "-----"
 echo ""
 echo "Reiniciamos apache"
